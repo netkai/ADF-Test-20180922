@@ -1,0 +1,17 @@
+{
+	"name": "AzureBatch1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"type": "AzureBatch",
+		"typeProperties": {
+			"accountName": "klinbatchacct180907",
+			"batchUri": "https://klinbatchacct180907.westus.batch.azure.com",
+			"poolName": "kailinAzureBatchPoolTest20180922",
+			"linkedServiceName": {
+				"referenceName": "AzureBlobStorage_ADF_CustomActivity1",
+				"type": "LinkedServiceReference"
+			},
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIktBSUxJTi1EQVRBRkFDVE9SWS1URVNULTIwMTgwOTE5X2ZkMWE3ZTVjLTRiNjgtNGM2NS04YmE1LTNjYjk2Y2Y5ZTZjMiINCn0="
+		}
+	}
+}
