@@ -1,0 +1,32 @@
+{
+	"name": "kailinAzureSqlDataset20180919",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "kailinAzureSqlLinkedService20180919",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureSqlTable",
+		"structure": [
+			{
+				"name": "ProductDescriptionID",
+				"type": "Int32"
+			},
+			{
+				"name": "Description",
+				"type": "String"
+			},
+			{
+				"name": "rowguid",
+				"type": "Guid"
+			},
+			{
+				"name": "ModifiedDate",
+				"type": "DateTime"
+			}
+		],
+		"typeProperties": {
+			"tableName": "SalesLT.ProductDescription"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

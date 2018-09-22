@@ -1,0 +1,33 @@
+{
+	"name": "AzureSqlTableSink1",
+	"properties": {
+		"description": "ADF v2 Test Sql Table as Sink 1",
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseADFv2AsSink1",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureSqlTable",
+		"structure": [
+			{
+				"name": "ProductDescriptionID",
+				"type": "Int32"
+			},
+			{
+				"name": "Description",
+				"type": "String"
+			},
+			{
+				"name": "rowguid",
+				"type": "Guid"
+			},
+			{
+				"name": "ModifiedDate",
+				"type": "DateTime"
+			}
+		],
+		"typeProperties": {
+			"tableName": "[SalesLT].[ProductDescription]"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
