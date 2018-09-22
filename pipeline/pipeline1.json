@@ -5,6 +5,14 @@
 			{
 				"name": "Copy Data1",
 				"type": "Copy",
+				"dependsOn": [
+					{
+						"activity": "Custom1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
