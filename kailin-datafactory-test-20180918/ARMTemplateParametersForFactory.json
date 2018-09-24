@@ -1,1 +1,24 @@
-{}
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "kailin-datafactory-test-20180918"
+		},
+		"AzureBatch1_accessKey": {
+			"value": ""
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabaseADFv2AsSink1_connectionString": {
+			"value": ""
+		},
+		"AzureBatch1_properties_typeProperties_accountName": {
+			"value": "klinbatchacct180907"
+		}
+	}
+}
