@@ -70,14 +70,15 @@
 					}
 				],
 				"typeProperties": {
-					"command": "cmd /c echo hello world from ADF custom activity test 20180922",
+					"command": "cmd /c echo hello world from ADF custom activity",
 					"resourceLinkedService": {
-						"referenceName": "AzureBlobStorage_ADF_CustomActivity1",
+						"referenceName": "AzureBlobStorage1",
 						"type": "LinkedServiceReference"
 					},
 					"folderPath": "container-klintemenos-private-20180905",
 					"extendedProperties": {
-						"customDelimiter": ","
+						"customDelimiter": ",",
+						"": ""
 					},
 					"referenceObjects": {
 						"linkedServices": [
@@ -88,7 +89,11 @@
 						],
 						"datasets": [
 							{
-								"referenceName": "kailinAzureSqlDataset20180919",
+								"referenceName": "AzureSqlTableSource1",
+								"type": "DatasetReference"
+							},
+							{
+								"referenceName": "AzureSqlTableSink1",
 								"type": "DatasetReference"
 							}
 						]
