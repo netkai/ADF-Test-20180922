@@ -77,8 +77,7 @@
 					},
 					"folderPath": "container-klintemenos-private-20180905",
 					"extendedProperties": {
-						"customDelimiter": ",",
-						"": ""
+						"customDelimiter": ","
 					},
 					"referenceObjects": {
 						"linkedServices": [
