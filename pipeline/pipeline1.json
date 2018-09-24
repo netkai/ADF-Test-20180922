@@ -3,57 +3,6 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy Data1",
-				"type": "Copy",
-				"dependsOn": [
-					{
-						"activity": "Custom1",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"policy": {
-					"timeout": "7.00:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"typeProperties": {
-					"source": {
-						"type": "SqlSource"
-					},
-					"sink": {
-						"type": "SqlSink",
-						"writeBatchSize": 10000
-					},
-					"enableStaging": false,
-					"dataIntegrationUnits": 0,
-					"translator": {
-						"type": "TabularTranslator",
-						"columnMappings": {
-							"ProductDescriptionID": "ProductDescriptionID",
-							"Description": "Description",
-							"rowguid": "rowguid",
-							"ModifiedDate": "ModifiedDate"
-						}
-					}
-				},
-				"inputs": [
-					{
-						"referenceName": "kailinAzureSqlDataset20180919",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "AzureSqlTableSink1",
-						"type": "DatasetReference"
-					}
-				]
-			},
-			{
 				"name": "Custom1",
 				"type": "Custom",
 				"policy": {
